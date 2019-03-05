@@ -1,0 +1,11 @@
+C:\Users\lovea\Desktop\ReviewerNet\ReviewerNet\bin\Debug\netcoreapp2.2\ReviewerNet.deps.json
+C:\Users\lovea\Desktop\ReviewerNet\ReviewerNet\bin\Debug\netcoreapp2.2\ReviewerNet.runtimeconfig.json
+C:\Users\lovea\Desktop\ReviewerNet\ReviewerNet\bin\Debug\netcoreapp2.2\ReviewerNet.runtimeconfig.dev.json
+C:\Users\lovea\Desktop\ReviewerNet\ReviewerNet\bin\Debug\netcoreapp2.2\ReviewerNet.dll
+C:\Users\lovea\Desktop\ReviewerNet\ReviewerNet\obj\Debug\netcoreapp2.2\ReviewerNet.csprojAssemblyReference.cache
+C:\Users\lovea\Desktop\ReviewerNet\ReviewerNet\obj\Debug\netcoreapp2.2\ReviewerNet.csproj.CoreCompileInputs.cache
+C:\Users\lovea\Desktop\ReviewerNet\ReviewerNet\obj\Debug\netcoreapp2.2\ReviewerNet.RazorAssemblyInfo.cache
+C:\Users\lovea\Desktop\ReviewerNet\ReviewerNet\obj\Debug\netcoreapp2.2\ReviewerNet.RazorAssemblyInfo.cs
+C:\Users\lovea\Desktop\ReviewerNet\ReviewerNet\obj\Debug\netcoreapp2.2\ReviewerNet.AssemblyInfoInputs.cache
+C:\Users\lovea\Desktop\ReviewerNet\ReviewerNet\obj\Debug\netcoreapp2.2\ReviewerNet.AssemblyInfo.cs
+C:\Users\lovea\Desktop\ReviewerNet\ReviewerNet\obj\Debug\netcoreapp2.2\ReviewerNet.RazorTargetAssemblyInfo.cache
