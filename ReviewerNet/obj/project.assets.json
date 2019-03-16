@@ -12178,11 +12178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lovea\\Desktop\\ReviewerNet\\ReviewerNet\\ReviewerNet.csproj",
+      "projectUniqueName": "D:\\MyProjects\\ReviewerNetCore\\ReviewerNet\\ReviewerNet.csproj",
       "projectName": "ReviewerNet",
-      "projectPath": "C:\\Users\\lovea\\Desktop\\ReviewerNet\\ReviewerNet\\ReviewerNet.csproj",
+      "projectPath": "D:\\MyProjects\\ReviewerNetCore\\ReviewerNet\\ReviewerNet.csproj",
       "packagesPath": "C:\\Users\\lovea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lovea\\Desktop\\ReviewerNet\\ReviewerNet\\obj\\",
+      "outputPath": "D:\\MyProjects\\ReviewerNetCore\\ReviewerNet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
