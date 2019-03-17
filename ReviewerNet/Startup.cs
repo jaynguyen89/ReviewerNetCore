@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
 
 namespace ReviewerNet
 {
@@ -26,6 +27,12 @@ namespace ReviewerNet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddDbContext<Models.MainApiDbContext>(
+                    options => options.UseSqlServer(Configuration["Data:MainApiDbContext:ConnectionString"])
+                );
+
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +50,8 @@ namespace ReviewerNet
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseSession();
+            app.UseAuthentication();
         }
     }
 }
