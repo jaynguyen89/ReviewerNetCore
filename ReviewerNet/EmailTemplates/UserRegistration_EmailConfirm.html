@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ReviewerNet</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Khand|Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style type="text/css">
+        h1 {
+            background-color: #37474f;
+            color: #eee;
+            text-align: center;
+            line-height: 100px;
+            font-family: Shrikhand;
+        }
+        .greeting {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .greeting, .title, .content {
+            font-family: "khand";
+        }
+        .confirmation {
+            color: blue;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><span style="color: #ff3030;">REVIEWER</span>NET</h1>
+    <div class="container">
+        <h4 class="greeting">Dear [Username],</h4>
+        <div class="title">Welcome to the community of <strong>ReviewerNet</strong>!</div>
+        <br />
+        <div class="content">You have sign up a new account with ReviewerNet. <br /> Please click <a href="https://localhost:5001/Account/ActivateAccount?EmailToken=[EmailToken]&amp;UserEmail=[UserEmail]">here</a> to confirm your email in order to start using features in our website.</div>
+        <br />
+        <div class="content">You can also copy and paste the following link into your browser to activate your account:
+            <p class="confirmation">https://localhost:5001/Account/ActivateAccount?EmailToken=[EmailToken]&amp;UserEmail=[UserEmail]</p>
+        </div>
+        <br />
+        <div class="content">
+            Warm regards,
+            <p>ReviewerNet</p>
+        </div>
+    </div>
+</body>
+</html>

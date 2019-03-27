@@ -18,25 +18,31 @@ namespace ReviewerNet.Models
         public int? ProfileId { get; set; }
         public string Username { get; set; }
         public string Email { get; set; }
-        public string Password { get; set; }
-        public string TempPassword { get; set; }
-        public string ConfirmToken { get; set; }
+        public string PasswordHash { get; set; }
+        public string PasswordSalt { get; set; }
+        public string PasswordToken { get; set; }
+        public string EmailToken { get; set; }
         public bool? IsEmailConfirmed { get; set; }
         public string PhoneNumber { get; set; }
-        public bool? IsPhoneComfirmed { get; set; }
-        public bool? Is2Faenabled { get; set; }
-        public byte? TwoFadestination { get; set; }
-        public string TwoFatoken { get; set; }
-        public DateTime? TwoFatokenSentOn { get; set; }
+        public bool? IsPhoneConfirmed { get; set; }
+        public bool? Is2FaEnabled { get; set; }
+        public byte? TwoFaDestination { get; set; }
+        public string TwoFaToken { get; set; }
+        public DateTime? TwoFaTokenSentOn { get; set; }
         public string FamilyName { get; set; }
         public string MiddleName { get; set; }
         public string GiveName { get; set; }
-        public DateTime? DateOfBith { get; set; }
+        public DateTime? DateOfBirth { get; set; }
         public string Headline { get; set; }
         public string AvatarName { get; set; }
         public bool? IsActive { get; set; }
         public DateTime? LastLogin { get; set; }
         public DateTime? LastActive { get; set; }
+        public string OldPasswords { get; set; }
+        public byte? LoginFailedCount { get; set; }
+        public bool? IsLocked { get; set; }
+        public DateTime? LockedOn { get; set; }
+        public short? LockDuration { get; set; }
         public DateTime CreatedOn { get; set; }
         public DateTime? UpdatedOn { get; set; }
 

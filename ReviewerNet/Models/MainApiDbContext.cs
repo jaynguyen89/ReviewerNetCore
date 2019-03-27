@@ -25,7 +25,7 @@ namespace ReviewerNet.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=MainApiDb;Trusted_Connection=True");
+                optionsBuilder.UseSqlServer("Server=.\\sqlexpress;Database=MainApiDb;Trusted_Connection=True;");
             }
         }
 
@@ -178,13 +178,13 @@ namespace ReviewerNet.Models
             {
                 entity.Property(e => e.AvatarName).HasMaxLength(450);
 
-                entity.Property(e => e.ConfirmToken).HasMaxLength(450);
-
                 entity.Property(e => e.CreatedOn).HasDefaultValueSql("(getdate())");
 
                 entity.Property(e => e.Email)
                     .IsRequired()
                     .HasMaxLength(100);
+
+                entity.Property(e => e.EmailToken).HasMaxLength(450);
 
                 entity.Property(e => e.FamilyName).HasMaxLength(50);
 
@@ -192,7 +192,7 @@ namespace ReviewerNet.Models
 
                 entity.Property(e => e.Headline).HasMaxLength(150);
 
-                entity.Property(e => e.Is2Faenabled)
+                entity.Property(e => e.Is2FaEnabled)
                     .HasColumnName("Is2FAEnabled")
                     .HasDefaultValueSql("((0))");
 
@@ -200,27 +200,39 @@ namespace ReviewerNet.Models
 
                 entity.Property(e => e.IsEmailConfirmed).HasDefaultValueSql("((0))");
 
-                entity.Property(e => e.IsPhoneComfirmed).HasDefaultValueSql("((0))");
+                entity.Property(e => e.IsLocked).HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.IsPhoneConfirmed).HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.LockDuration).HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.LoginFailedCount).HasDefaultValueSql("((0))");
 
                 entity.Property(e => e.MiddleName).HasMaxLength(50);
 
-                entity.Property(e => e.Password)
+                entity.Property(e => e.OldPasswords).HasMaxLength(1000);
+
+                entity.Property(e => e.PasswordHash)
                     .IsRequired()
                     .HasMaxLength(450);
 
+                entity.Property(e => e.PasswordSalt)
+                    .IsRequired()
+                    .HasMaxLength(450);
+
+                entity.Property(e => e.PasswordToken).HasMaxLength(450);
+
                 entity.Property(e => e.PhoneNumber).HasMaxLength(30);
 
-                entity.Property(e => e.TempPassword).HasMaxLength(450);
-
-                entity.Property(e => e.TwoFadestination)
+                entity.Property(e => e.TwoFaDestination)
                     .HasColumnName("TwoFADestination")
                     .HasDefaultValueSql("((0))");
 
-                entity.Property(e => e.TwoFatoken)
+                entity.Property(e => e.TwoFaToken)
                     .HasColumnName("TwoFAToken")
                     .HasMaxLength(450);
 
-                entity.Property(e => e.TwoFatokenSentOn).HasColumnName("TwoFATokenSentOn");
+                entity.Property(e => e.TwoFaTokenSentOn).HasColumnName("TwoFATokenSentOn");
 
                 entity.Property(e => e.Username)
                     .IsRequired()

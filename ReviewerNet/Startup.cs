@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using ReviewerNet.CustomFilters;
+using ReviewerNet.ServicesAndHelpers;
+using ReviewerNet.Models;
 
 namespace ReviewerNet
 {
@@ -28,11 +25,42 @@ namespace ReviewerNet
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddDbContext<Models.MainApiDbContext>(
+            services.AddDbContext<MainApiDbContext>(
                     options => options.UseSqlServer(Configuration["Data:MainApiDbContext:ConnectionString"])
                 );
-
+            
+            services.AddDistributedMemoryCache();
             services.AddSession();
+            
+            services.AddTransient<EmailService, EmailService>();
+            services.AddScoped<ReviewerNetActionFilter>();
+
+            /*services.AddDefaultIdentity<Users>()
+                    .AddEntityFrameworkStores<MainApiDbContext>()
+                    .AddDefaultTokenProviders(); //Provider for token generation; used for password/username/email recovery and 2FA
+
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequiredUniqueChars = 4;
+
+                options.User.RequireUniqueEmail = true;
+                options.Lockout.AllowedForNewUsers = true;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+                options.Lockout.MaxFailedAccessAttempts = 5;
+            });*/
+            
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.Cookie.HttpOnly = true;
+                options.Cookie.Expiration = TimeSpan.FromHours(2);
+                options.Cookie.IsEssential = true;
+                options.LoginPath = "/Account/Login";
+                options.LogoutPath = "/";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,8 +77,13 @@ namespace ReviewerNet
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
             app.UseSession();
+            
+            app.UseMvc(routes => {
+                routes.MapRoute("OptionalParam", "{controller}/{action}/{id?}");
+            });
+            
+            app.UseCookiePolicy();
             app.UseAuthentication();
         }
     }

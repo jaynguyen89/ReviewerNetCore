@@ -74,13 +74,14 @@ CREATE TABLE [dbo].[Users] (
     [ProfileId]     INT             DEFAULT NULL,
 	[Username]  NVARCHAR(30)        NOT NULL,
     [Email]     NVARCHAR(100)       NOT NULL,
-    [Password]  NVARCHAR(450)       NOT NULL,
+    [PasswordHash]  NVARCHAR(450)       NOT NULL,
+    [PasswordSalt]  NVARCHAR(450)   NOT NULL,
     -- Forgotten password recovery
-    [TempPassword]  NVARCHAR(450)   DEFAULT NULL,
-    [ConfirmToken]  NVARCHAR(450)   DEFAULT NULL,
+    [PasswordToken]  NVARCHAR(450)   DEFAULT NULL,
+    [EmailToken]  NVARCHAR(450)   DEFAULT NULL,
     [IsEmailConfirmed]  BIT         DEFAULT 0,
     [PhoneNumber]   NVARCHAR(30)    DEFAULT NULL,
-    [IsPhoneComfirmed]  BIT         DEFAULT 0,
+    [IsPhoneConfirmed]  BIT         DEFAULT 0,
     -- Two-Factors Authentication
     [Is2FAEnabled]      BIT         DEFAULT 0,
     -- Not set (0), (1) Via Email, (2) Via Phone, (3) Via SMS
@@ -90,13 +91,19 @@ CREATE TABLE [dbo].[Users] (
     [FamilyName]    NVARCHAR(50)    DEFAULT NULL,
     [MiddleName]    NVARCHAR(50)    DEFAULT NULL,
     [GiveName]      NVARCHAR(50)    DEFAULT NULL,
-    [DateOfBith]    DATETIME2 (7)   DEFAULT NULL,
+    [DateOfBirth]    DATETIME2 (7)   DEFAULT NULL,
     [Headline]      NVARCHAR(150)   DEFAULT NULL,
     -- Avatar uploaded by user, if null, use Gravatar instead
     [AvatarName]    NVARCHAR(450)   DEFAULT NULL,
     [IsActive]      BIT             DEFAULT 1,
     [LastLogin]     DATETIME2 (7)   DEFAULT NULL,
     [LastActive]    DATETIME2 (7)   DEFAULT NULL,
+    -- Store data in JSON format: {"password hash": {"salt string":"", "set date":""}}
+    [OldPasswords]  NVARCHAR(1000)  DEFAULT NULL,
+    [LoginFailedCount]  TINYINT     DEFAULT 0,
+    [IsLocked]      BIT             DEFAULT 0,
+    [LockedOn]      DATETIME2 (7)   DEFAULT NULL,
+    [LockDuration]  SMALLINT        DEFAULT 0,
     [CreatedOn]     DATETIME2 (7)   DEFAULT (GETDATE()) NOT NULL,
     [UpdatedOn]     DATETIME2 (7)   DEFAULT NULL,
     CONSTRAINT [PK_Users_Id] PRIMARY KEY ([Id] ASC),
@@ -126,3 +133,5 @@ CREATE TABLE [dbo].[Blockings] (
 	CONSTRAINT [FK_Blockings_Users_BlockerId] FOREIGN KEY ([BlockerId]) REFERENCES [dbo].[Users] ([Id]),
 	CONSTRAINT [FK_Blockings_Users_BlockedId] FOREIGN KEY ([BlockedId]) REFERENCES [dbo].[Users] ([Id])
 );
+
+https://localhost:5001/Account/ActivateAccount?EmailToken=77781841A2EAFA72B9600A07367896A9&UserEmail=love.achay@gmail.com

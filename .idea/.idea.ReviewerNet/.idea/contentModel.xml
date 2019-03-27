@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\lovea\.Rider2018.3\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\lovea\.Rider2018.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\lovea\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_ReviewerNet.-520155305.00" t="ExcludeRecursive" />
     <e p="D:\MyProjects\ReviewerNetCore" t="IncludeFlat">
@@ -10,7 +11,23 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="AccountController.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="CustomFilters" t="Include">
+          <e p="ReviewerNetActionFilter.cs" t="Include" />
+        </e>
+        <e p="EmailTemplates" t="Include">
+          <e p="UserRegistration_EmailConfirm.html" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Blockings.cs" t="Include" />
+          <e p="Locations.cs" t="Include" />
+          <e p="MainApiDbContext.cs" t="Include" />
+          <e p="Profiles.cs" t="Include" />
+          <e p="UserConnections.cs" t="Include" />
+          <e p="Users.cs" t="Include" />
+          <e p="UserSession.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -24,7 +41,14 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="ReviewerNet.csproj" t="IncludeRecursive" />
+        <e p="ServicesAndHelpers" t="Include">
+          <e p="EmailService.cs" t="Include" />
+          <e p="HashHelper.cs" t="Include" />
+        </e>
         <e p="Startup.cs" t="Include" />
+        <e p="ViewModels" t="Include">
+          <e p="UserViewModel.cs" t="Include" />
+        </e>
       </e>
       <e p="ReviewerNet.sln" t="IncludeFlat" />
     </e>
