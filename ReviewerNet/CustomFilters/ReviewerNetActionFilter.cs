@@ -17,7 +17,10 @@ namespace ReviewerNet.CustomFilters
 
         private bool CheckRequestedActionAllowedBeforeAuth(string route)
         {
-            return route.Contains("/Account/Register") || route.Contains("/Account/ActivateAccount") || route.Contains("/Account/Login");
+            return route.Contains("/Account/Register") ||
+                   route.Contains("/Account/ActivateAccount") ||
+                   route.Contains("/Account/Login") ||
+                   route.Contains("/Account/TransferSessionInformation");
         }
     }
 }

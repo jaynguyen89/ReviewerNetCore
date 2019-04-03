@@ -12,60 +12,87 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReviewerNet/Models/UserSession.cs">
+        <entry file="file://$PROJECT_DIR$/ReviewerNet/ViewModels/UserViewModel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+            <state relative-caret-position="822">
+              <caret line="77" column="77" lean-forward="true" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
               <folding>
-                <marker date="1553568949263" expanded="true" signature="43:365" ph="{...}" />
-                <marker date="1553568949263" expanded="true" signature="81:363" ph="{...}" />
-                <marker date="1553568949263" expanded="true" signature="299:357" ph="{...}" />
+                <marker date="1553651393946" expanded="false" signature="6:183" ph="..." />
+                <marker date="1553651393946" expanded="true" signature="217:3517" ph="{...}" />
+                <marker date="1553651393946" expanded="true" signature="265:3515" ph="{...}" />
+                <marker date="1553651393946" expanded="true" signature="630:872" ph="{...}" />
+                <marker date="1553651393946" expanded="true" signature="967:1693" ph="{...}" />
+                <marker date="1553651393946" expanded="true" signature="1785:2619" ph="{...}" />
+                <marker date="1553651393946" expanded="true" signature="2678:3176" ph="{...}" />
+                <marker date="1553651393946" expanded="true" signature="3216:3509" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ReviewerNet/ViewModels/UserViewModel.cs">
+        <entry file="file://$PROJECT_DIR$/ReviewerNet/Controllers/AccountController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
+            <state relative-caret-position="264">
+              <caret line="134" column="13" lean-forward="true" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
               <folding>
-                <marker date="1553650777870" expanded="false" signature="6:183" ph="..." />
-                <marker date="1553650777870" expanded="true" signature="217:3520" ph="{...}" />
-                <marker date="1553650777870" expanded="true" signature="265:3518" ph="{...}" />
-                <marker date="1553650777870" expanded="true" signature="630:872" ph="{...}" />
-                <marker date="1553650777870" expanded="true" signature="967:1693" ph="{...}" />
-                <marker date="1553650777870" expanded="true" signature="1785:2622" ph="{...}" />
-                <marker date="1553650777870" expanded="true" signature="2681:3179" ph="{...}" />
-                <marker date="1553650777870" expanded="true" signature="3219:3512" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="6:385" ph="..." />
+                <marker date="1553947309553" expanded="true" signature="420:6761" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="506:6759" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="677:777" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="867:1085" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="904:1049" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="1095:1241" ph="/* Function uses UserRegistrationAndLoginData as the ViewModel to serialize registration data ... */" />
+                <marker date="1553947309553" expanded="true" signature="1376:3445" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="2386:2644" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="3463:3745" ph="/* Function called from Email activation link to activate user account. ... */" />
+                <marker date="1553947309553" expanded="true" signature="3883:4308" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="4033:4216" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="4335:4523" ph="/* Function to login user using user's login credentials. After logging in, create Session and Cookie data to man ... */" />
+                <marker date="1553947309553" expanded="true" signature="4654:6148" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="4953:5302" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="5355:5710" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="6232:6753" ph="{...}" />
+                <marker date="1553947309553" expanded="true" signature="6255:6599" ph="/* var options = new CookieOptions {Expires = DateTime.Now.AddHours(2)}; ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReviewerNet/Controllers/AccountController.cs">
+        <entry file="file://$PROJECT_DIR$/ReviewerNet/CustomFilters/ReviewerNetActionFilter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="56" column="67" lean-forward="true" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
+            <state relative-caret-position="60">
+              <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
               <folding>
-                <marker date="1553649196456" expanded="false" signature="6:315" ph="..." />
-                <marker date="1553649196456" expanded="true" signature="350:5871" ph="{...}" />
-                <marker date="1553649196456" expanded="true" signature="400:5869" ph="{...}" />
-                <marker date="1553649196456" expanded="true" signature="571:671" ph="{...}" />
-                <marker date="1553649196456" expanded="true" signature="761:979" ph="{...}" />
-                <marker date="1553649196456" expanded="true" signature="798:943" ph="{...}" />
-                <marker date="1553649196456" expanded="true" signature="989:1135" ph="/* Function uses UserRegistrationAndLoginData as the ViewModel to serialize registration data ... */" />
-                <marker date="1553649196456" expanded="true" signature="1270:3160" ph="{...}" />
-                <marker date="1553649196456" expanded="true" signature="2101:2359" ph="{...}" />
-                <marker date="1553649196456" expanded="true" signature="3178:3460" ph="/* Function called from Email activation link to activate user account. ... */" />
-                <marker date="1553649196456" expanded="true" signature="3598:4023" ph="{...}" />
-                <marker date="1553649196456" expanded="true" signature="3748:3931" ph="{...}" />
-                <marker date="1553649196456" expanded="true" signature="4050:4238" ph="/* Function to login user using user's login credentials. After logging in, create Session and Cookie data to man ... */" />
-                <marker date="1553649196456" expanded="true" signature="4369:5863" ph="{...}" />
-                <marker date="1553649196456" expanded="true" signature="4668:5017" ph="{...}" />
-                <marker date="1553649196456" expanded="true" signature="5070:5425" ph="{...}" />
+                <marker date="1553662846731" expanded="false" signature="6:97" ph="..." />
+                <marker date="1553662846731" expanded="true" signature="134:1018" ph="{...}" />
+                <marker date="1553662846731" expanded="true" signature="201:1016" ph="{...}" />
+                <marker date="1553662846731" expanded="true" signature="292:664" ph="{...}" />
+                <marker date="1553662846731" expanded="true" signature="738:1010" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReviewerNet/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="92" column="12" lean-forward="true" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="12" />
+              <folding>
+                <marker date="1553927170284" expanded="false" signature="6:341" ph="..." />
+                <marker date="1553927170284" expanded="true" signature="364:3784" ph="{...}" />
+                <marker date="1553927170284" expanded="true" signature="391:3782" ph="{...}" />
+                <marker date="1553927170284" expanded="true" signature="450:513" ph="{...}" />
+                <marker date="1553927170284" expanded="true" signature="814:2880" ph="{...}" />
+                <marker date="1553927170284" expanded="true" signature="864:1102" ph="{...}" />
+                <marker date="1553927170284" expanded="true" signature="1637:2506" ph="/* services.AddDefaultIdentity&lt;Users&gt;() ... */" />
+                <marker date="1553927170284" expanded="true" signature="2578:2868" ph="{...}" />
+                <marker date="1553927170284" expanded="true" signature="3068:3776" ph="{...}" />
+                <marker date="1553927170284" expanded="true" signature="3115:3192" ph="{...}" />
+                <marker date="1553927170284" expanded="true" signature="3209:3412" ph="{...}" />
+                <marker date="1553927170284" expanded="true" signature="3583:3679" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -122,16 +149,16 @@
         <option value="$PROJECT_DIR$/ReviewerNet/EmailTemplates/UserRegistration_EmailConfirm.html" />
         <option value="$PROJECT_DIR$/ReviewerNet/ServicesAndHelpers/HashHelper.cs" />
         <option value="$PROJECT_DIR$/ReviewerNet/Controllers/ValuesController.cs" />
-        <option value="$PROJECT_DIR$/ReviewerNet/Models/UserSession.cs" />
         <option value="$PROJECT_DIR$/ReviewerNet/ServicesAndHelpers/ReviewerNetActionInvoker.cs" />
         <option value="$PROJECT_DIR$/ReviewerNet/ServicesAndHelpers/EmailService.cs" />
         <option value="$PROJECT_DIR$/ReviewerNet/ServicesAndHelpers/ReviewerNetActionFilter.cs" />
-        <option value="$PROJECT_DIR$/ReviewerNet/CustomFilters/ReviewerNetActionFilter.cs" />
-        <option value="$PROJECT_DIR$/ReviewerNet/Startup.cs" />
         <option value="$PROJECT_DIR$/ReviewerNet/ServicesAndHelpers/DataValidator.cs" />
         <option value="$PROJECT_DIR$/ReviewerNet/ViewModels/UserRegistrationViewModel.cs" />
-        <option value="$PROJECT_DIR$/ReviewerNet/Controllers/AccountController.cs" />
         <option value="$PROJECT_DIR$/ReviewerNet/ViewModels/UserViewModel.cs" />
+        <option value="$PROJECT_DIR$/ReviewerNet/Models/UserSession.cs" />
+        <option value="$PROJECT_DIR$/ReviewerNet/CustomFilters/ReviewerNetActionFilter.cs" />
+        <option value="$PROJECT_DIR$/ReviewerNet/Startup.cs" />
+        <option value="$PROJECT_DIR$/ReviewerNet/Controllers/AccountController.cs" />
       </list>
     </option>
   </component>
@@ -147,7 +174,6 @@
     </navigator>
     <panes>
       <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -160,17 +186,12 @@
               <item name="ReviewerNet" type="24d0babc:SolutionExplorerModelNode" />
               <item name="ReviewerNet" type="24d0babc:SolutionExplorerModelNode" />
             </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="ReviewerNet" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ReviewerNet" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ServicesAndHelpers" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,12 +248,14 @@
       <workItem from="1553064925874" duration="10416000" />
       <workItem from="1553493188798" duration="12154000" />
       <workItem from="1553563501375" duration="26140000" />
-      <workItem from="1553648085492" duration="2693000" />
+      <workItem from="1553648085492" duration="6207000" />
+      <workItem from="1553664053513" duration="1412000" />
+      <workItem from="1553849160486" duration="14016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77453000" />
+    <option name="totallyTimeSpent" value="96395000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -247,15 +270,15 @@
     <frame x="64" y="-8" width="1864" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2782705" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2849224" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21495327" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.24610592" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38213915" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2886812" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
@@ -268,7 +291,7 @@
       <window_info anchor="bottom" id="REST Client" order="13" weight="0.32917964" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32917964" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Build" order="16" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -528,22 +551,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReviewerNet/Startup.cs">
+    <entry file="file://$PROJECT_DIR$/ReviewerNet/ServicesAndHelpers/DataValidator.cs" />
+    <entry file="file://$PROJECT_DIR$/ReviewerNet/Models/UserSession.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding>
-            <marker date="1553574262648" expanded="true" signature="6:341" ph="..." />
-            <marker date="1553574262648" expanded="true" signature="364:3359" ph="{...}" />
-            <marker date="1553574262648" expanded="true" signature="391:3357" ph="{...}" />
-            <marker date="1553574262648" expanded="true" signature="450:513" ph="{...}" />
-            <marker date="1553574262648" expanded="true" signature="736:2509" ph="{...}" />
-            <marker date="1553574262648" expanded="true" signature="1266:2135" ph="/* services.AddDefaultIdentity&lt;Users&gt;() ... */" />
-            <marker date="1553574262648" expanded="true" signature="2207:2497" ph="{...}" />
-            <marker date="1553574262648" expanded="true" signature="2697:3351" ph="{...}" />
-            <marker date="1553574262648" expanded="true" signature="2744:2821" ph="{...}" />
-            <marker date="1553574262648" expanded="true" signature="2838:3041" ph="{...}" />
-            <marker date="1553574262648" expanded="true" signature="3158:3254" ph="{...}" />
+            <marker date="1553660094498" expanded="true" signature="43:447" ph="{...}" />
+            <marker date="1553660094498" expanded="true" signature="81:445" ph="{...}" />
+            <marker date="1553660094498" expanded="true" signature="299:439" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReviewerNet/ReviewerNet.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReviewerNet/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="92" column="12" lean-forward="true" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="12" />
+          <folding>
+            <marker date="1553927170284" expanded="false" signature="6:341" ph="..." />
+            <marker date="1553927170284" expanded="true" signature="364:3784" ph="{...}" />
+            <marker date="1553927170284" expanded="true" signature="391:3782" ph="{...}" />
+            <marker date="1553927170284" expanded="true" signature="450:513" ph="{...}" />
+            <marker date="1553927170284" expanded="true" signature="814:2880" ph="{...}" />
+            <marker date="1553927170284" expanded="true" signature="864:1102" ph="{...}" />
+            <marker date="1553927170284" expanded="true" signature="1637:2506" ph="/* services.AddDefaultIdentity&lt;Users&gt;() ... */" />
+            <marker date="1553927170284" expanded="true" signature="2578:2868" ph="{...}" />
+            <marker date="1553927170284" expanded="true" signature="3068:3776" ph="{...}" />
+            <marker date="1553927170284" expanded="true" signature="3115:3192" ph="{...}" />
+            <marker date="1553927170284" expanded="true" signature="3209:3412" ph="{...}" />
+            <marker date="1553927170284" expanded="true" signature="3583:3679" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -551,68 +591,57 @@
     <entry file="file://$PROJECT_DIR$/ReviewerNet/CustomFilters/ReviewerNetActionFilter.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
           <folding>
-            <marker date="1553574272066" expanded="true" signature="6:97" ph="..." />
-            <marker date="1553574272066" expanded="true" signature="134:904" ph="{...}" />
-            <marker date="1553574272066" expanded="true" signature="201:902" ph="{...}" />
-            <marker date="1553574272066" expanded="true" signature="292:664" ph="{...}" />
-            <marker date="1553574272066" expanded="true" signature="738:896" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReviewerNet/ServicesAndHelpers/DataValidator.cs" />
-    <entry file="file://$PROJECT_DIR$/ReviewerNet/Models/UserSession.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding>
-            <marker date="1553568949263" expanded="true" signature="43:365" ph="{...}" />
-            <marker date="1553568949263" expanded="true" signature="81:363" ph="{...}" />
-            <marker date="1553568949263" expanded="true" signature="299:357" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReviewerNet/Controllers/AccountController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="56" column="67" lean-forward="true" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
-          <folding>
-            <marker date="1553649196456" expanded="false" signature="6:315" ph="..." />
-            <marker date="1553649196456" expanded="true" signature="350:5871" ph="{...}" />
-            <marker date="1553649196456" expanded="true" signature="400:5869" ph="{...}" />
-            <marker date="1553649196456" expanded="true" signature="571:671" ph="{...}" />
-            <marker date="1553649196456" expanded="true" signature="761:979" ph="{...}" />
-            <marker date="1553649196456" expanded="true" signature="798:943" ph="{...}" />
-            <marker date="1553649196456" expanded="true" signature="989:1135" ph="/* Function uses UserRegistrationAndLoginData as the ViewModel to serialize registration data ... */" />
-            <marker date="1553649196456" expanded="true" signature="1270:3160" ph="{...}" />
-            <marker date="1553649196456" expanded="true" signature="2101:2359" ph="{...}" />
-            <marker date="1553649196456" expanded="true" signature="3178:3460" ph="/* Function called from Email activation link to activate user account. ... */" />
-            <marker date="1553649196456" expanded="true" signature="3598:4023" ph="{...}" />
-            <marker date="1553649196456" expanded="true" signature="3748:3931" ph="{...}" />
-            <marker date="1553649196456" expanded="true" signature="4050:4238" ph="/* Function to login user using user's login credentials. After logging in, create Session and Cookie data to man ... */" />
-            <marker date="1553649196456" expanded="true" signature="4369:5863" ph="{...}" />
-            <marker date="1553649196456" expanded="true" signature="4668:5017" ph="{...}" />
-            <marker date="1553649196456" expanded="true" signature="5070:5425" ph="{...}" />
+            <marker date="1553662846731" expanded="false" signature="6:97" ph="..." />
+            <marker date="1553662846731" expanded="true" signature="134:1018" ph="{...}" />
+            <marker date="1553662846731" expanded="true" signature="201:1016" ph="{...}" />
+            <marker date="1553662846731" expanded="true" signature="292:664" ph="{...}" />
+            <marker date="1553662846731" expanded="true" signature="738:1010" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReviewerNet/ViewModels/UserViewModel.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
+        <state relative-caret-position="822">
+          <caret line="77" column="77" lean-forward="true" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
           <folding>
-            <marker date="1553650777870" expanded="false" signature="6:183" ph="..." />
-            <marker date="1553650777870" expanded="true" signature="217:3520" ph="{...}" />
-            <marker date="1553650777870" expanded="true" signature="265:3518" ph="{...}" />
-            <marker date="1553650777870" expanded="true" signature="630:872" ph="{...}" />
-            <marker date="1553650777870" expanded="true" signature="967:1693" ph="{...}" />
-            <marker date="1553650777870" expanded="true" signature="1785:2622" ph="{...}" />
-            <marker date="1553650777870" expanded="true" signature="2681:3179" ph="{...}" />
-            <marker date="1553650777870" expanded="true" signature="3219:3512" ph="{...}" />
+            <marker date="1553651393946" expanded="false" signature="6:183" ph="..." />
+            <marker date="1553651393946" expanded="true" signature="217:3517" ph="{...}" />
+            <marker date="1553651393946" expanded="true" signature="265:3515" ph="{...}" />
+            <marker date="1553651393946" expanded="true" signature="630:872" ph="{...}" />
+            <marker date="1553651393946" expanded="true" signature="967:1693" ph="{...}" />
+            <marker date="1553651393946" expanded="true" signature="1785:2619" ph="{...}" />
+            <marker date="1553651393946" expanded="true" signature="2678:3176" ph="{...}" />
+            <marker date="1553651393946" expanded="true" signature="3216:3509" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReviewerNet/Controllers/AccountController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="134" column="13" lean-forward="true" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
+          <folding>
+            <marker date="1553947309553" expanded="true" signature="6:385" ph="..." />
+            <marker date="1553947309553" expanded="true" signature="420:6761" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="506:6759" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="677:777" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="867:1085" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="904:1049" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="1095:1241" ph="/* Function uses UserRegistrationAndLoginData as the ViewModel to serialize registration data ... */" />
+            <marker date="1553947309553" expanded="true" signature="1376:3445" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="2386:2644" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="3463:3745" ph="/* Function called from Email activation link to activate user account. ... */" />
+            <marker date="1553947309553" expanded="true" signature="3883:4308" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="4033:4216" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="4335:4523" ph="/* Function to login user using user's login credentials. After logging in, create Session and Cookie data to man ... */" />
+            <marker date="1553947309553" expanded="true" signature="4654:6148" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="4953:5302" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="5355:5710" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="6232:6753" ph="{...}" />
+            <marker date="1553947309553" expanded="true" signature="6255:6599" ph="/* var options = new CookieOptions {Expires = DateTime.Now.AddHours(2)}; ... */" />
           </folding>
         </state>
       </provider>

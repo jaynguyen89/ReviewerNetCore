@@ -1,16 +1,20 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ReviewerNet.ServicesAndHelpers;
 using ReviewerNet.Models;
 using ReviewerNet.ViewModels;
 using Microsoft.EntityFrameworkCore;
-using ReviewerNet.CustomFilters;
 
 namespace ReviewerNet.Controllers
 {
+    [EnableCors("AllowAllOrigins")]
     public class AccountController : Controller
     {
         private readonly MainApiDbContext _context;
@@ -41,6 +45,7 @@ namespace ReviewerNet.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Register(UserRegistrationAndLoginData signupData)
         {
+            System.Diagnostics.Debug.WriteLine("console diagnostic = " + signupData.Email + " " + signupData.Password + " " + signupData.UserName + " " + signupData.PhoneNumber);
             var (key, value) = signupData.CheckPassword();
             if (!key)
                 return Json(new { result = "failed", message = value });
@@ -147,6 +152,22 @@ namespace ReviewerNet.Controllers
             UserSession.SessionRole = "";
                 
             return Json(new { result = "success", message = UserSession.SessionId });
+        }
+
+        [AllowAnonymous]
+        public IActionResult TransferSessionInformation()
+        {
+            /*var options = new CookieOptions {Expires = DateTime.Now.AddHours(2)};
+            Response.Cookies.Append(
+                "UserData",
+                "SessionId",
+                new CookieOptions()
+                {
+                    Path = "/",
+                    Expires = DateTime.UtcNow.AddHours(2)
+                }
+            );*/
+            return Json(new { SessionId = UserSession.SessionId, SessionEnd = UserSession.SessionEnd, SessionRole = UserSession.SessionRole });
         }
     }
 }

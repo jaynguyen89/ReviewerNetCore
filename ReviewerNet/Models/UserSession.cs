@@ -13,6 +13,8 @@ namespace ReviewerNet.Models
         static UserSession()
         {
             SessionId = string.Empty;
+            SessionEnd = DateTime.UtcNow;
+            SessionRole = string.Empty;
         }
     }
 }
